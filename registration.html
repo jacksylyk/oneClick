@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / Sign Up</title>
+    <link rel="stylesheet" href="./src/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <form action="POST" id="register" class="form ">
+            <h1 class="form__title">Create Account</h1>
+            <div class="fom__message form__message--error" hidden>Incorrect username/password combination.</div>
+            <div class="form__input-group">
+                <input type="text" placeholder="Username" autofocus class="form__input">
+                <div class="form__input-error-message" hidden>Error Message!</div>
+            </div>
+            <div class="form__input-group">
+                <input type="text" placeholder="Email Address" autofocus class="form__input">
+                <div class="form__input-error-message" hidden>Error Message!</div>
+            </div>
+            <div class="form__input-group">
+                <input type="password" placeholder="Password" autofocus class="form__input">
+                <div class="form__input-error-message" hidden>Error Message!</div>
+            </div>
+            <div class="form__input-group">
+                <input type="password" placeholder="Confirm password" autofocus class="form__input">
+                <div class="form__input-error-message" hidden>Error Message!</div>
+            </div>
+            <button class="form__button" type="submit">Continue</button>
+            <p class="form__text">
+                <a  href="./index.html" class="form__link" id="linkLogin">Already have an account? Sign in</a>
+            </p>
+        </form>
+    </div>
+
+    <script src="/src/main.js"></script>
+</body>
+</html>
